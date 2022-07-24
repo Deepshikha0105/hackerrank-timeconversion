@@ -1,0 +1,17 @@
+def timeConversion(s):
+    if "PM" in s:
+        if s[0:2]=='12':
+            return (s[0:8])
+        else:
+            r=int(s[0:2])+12
+            y=str(r)
+            return (y+s[2:8])
+            
+    
+    if 'AM' in s:
+        if s[0:2]=='12':
+            
+            return ('00'+s[2:8])
+        else:
+            return (s[0:8])
+        
